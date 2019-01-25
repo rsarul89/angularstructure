@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+
+#mainContainer{
+    padding-top: 15px !important;
+}
+.paddingCustom{
+    padding-right: 0.20rem !important;
+    padding-left: 0.20rem !important;
+}

@@ -1,0 +1,22 @@
+<h1>Hi {{currentUser.username}}!</h1>
+<p>You're logged in with Angular 6!!</p>
+<h3>All registered users:</h3>
+<div class="row">
+  <div class="col-sm-12">
+    <table class="table table-bordered table-condensed table-hover tbl">
+      <thead>
+        <tr>
+          <th>User Name</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{user.username}}</td>
+          <td><button class="btn btn-sm btn-danger" (click)="deleteUser(user.id)">X</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<p><a class="btn btn-md btn-danger" [routerLink]="['/auth/login']">Logout</a></p>

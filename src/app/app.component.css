@@ -1,0 +1,10 @@
+.hide{
+    display:none !important;
+}
+.disable{
+    cursor: none !important;
+    pointer-events: none !important;
+}
+.mr-l-10{
+    margin-left: 10px;
+}
